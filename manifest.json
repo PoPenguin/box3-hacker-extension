@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Box3Hacker",
+  "description": "Box3高级外挂",
+  "version": "0.1",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://box3.fun/p/*"],
+      "js": ["play.js"]
+    },
+    {
+      "matches": ["https://box3.fun/e/*"],
+      "js": ["editor.js"]
+    },
+    {
+      "matches": ["https://box3.fun/g/*"],
+      "js": ["game.js"],
+      "css": ["z-index-patch.css"]
+    }
+  ]
+}
