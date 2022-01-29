@@ -7,11 +7,13 @@
   "content_scripts": [
     {
       "matches": ["https://box3.fun/p/*"],
-      "js": ["play.js"]
+      "js": ["play.js"],
+      "css": ["z-index-patch.css"]
     },
     {
       "matches": ["https://box3.fun/e/*"],
-      "js": ["editor.js"]
+      "js": ["editor.js"],
+      "css": ["z-index-patch.css"]
     },
     {
       "matches": ["https://box3.fun/g/*"],
